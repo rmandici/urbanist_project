@@ -14,7 +14,7 @@ export const AboutSection = () => {
               Web Creator with a Passion for Scalable and Modern Experiences
             </h3>
 
-            <p classname="text-muted-foreground">
+            <p className="text-muted-foreground">
               Since 2019, I’ve worked across various industries and
               technologies, gaining valuable insights from every experience.
               Throughout it all, my focus has remained on web
@@ -22,7 +22,7 @@ export const AboutSection = () => {
               real results.
             </p>
 
-            <p classname="text-muted-foreground">
+            <p className="text-muted-foreground">
               I find deep satisfaction in the creative process behind web
               development—solving problems, refining interactions, and building
               seamless experiences that people enjoy using.
