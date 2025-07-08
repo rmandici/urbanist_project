@@ -2,41 +2,71 @@ import { useState } from "react";
 import { cn } from "../lib/utils";
 
 const skills = [
-  //Frontend
-  { name: "HTML/CSS", level: 95, category: "Frontend" },
-  { name: "Javascript", level: 90, category: "Frontend" },
-  { name: "React", level: 85, category: "Frontend" },
-  { name: "Tailwind CSS", level: 90, category: "Frontend" },
-  { name: "TypeScript", level: 85, category: "Frontend" },
-  { name: "Next.Js", level: 80, category: "Frontend" },
+  // Planificare Urbană
+  {
+    name: "Planuri Urbanistice Zonale (PUZ)",
+    level: 90,
+    category: "Planificare",
+  },
+  {
+    name: "Planuri Urbanistice de Detaliu (PUD)",
+    level: 85,
+    category: "Planificare",
+  },
+  {
+    name: "Planuri Urbanistice Generale (PUG)",
+    level: 80,
+    category: "Planificare",
+  },
+  {
+    name: "Strategii de Dezvoltare Urbană",
+    level: 85,
+    category: "Planificare",
+  },
+  { name: "Regenerare Urbană", level: 80, category: "Planificare" },
 
-  //Backend
-  { name: "Node.Js", level: 85, category: "Backend" },
-  { name: "Express", level: 75, category: "Backend" },
-  { name: "MongoDB", level: 65, category: "Backend" },
-  { name: "Firebase", level: 55, category: "Backend" },
-  { name: "Prisma", level: 60, category: "Backend" },
+  // GIS & Software
+  { name: "ArcGIS", level: 85, category: "GIS & Software" },
+  { name: "QGIS", level: 80, category: "GIS & Software" },
+  { name: "AutoCAD", level: 90, category: "GIS & Software" },
+  { name: "SketchUp", level: 75, category: "GIS & Software" },
+  { name: "Adobe Illustrator", level: 85, category: "GIS & Software" },
 
-  //Tools
-  { name: "Git", level: 80, category: "Tools" },
-  { name: "Figma", level: 75, category: "Tools" },
-  { name: "VSCode", level: 90, category: "Tools" },
-  { name: "Postman", level: 90, category: "Tools" },
+  // Legislație & Reglementare
+  { name: "Legislație Urbanistică", level: 90, category: "Reglementare" },
+  { name: "Elaborare Regulamente Locale", level: 80, category: "Reglementare" },
+  { name: "Avizare Proiecte", level: 85, category: "Reglementare" },
+
+  // Instrumente & Comunicare
+  { name: "Simulări 3D", level: 75, category: "Instrumente" },
+  { name: "Raportare și Prezentare", level: 80, category: "Instrumente" },
+  { name: "Participare publică", level: 80, category: "Instrumente" },
+  { name: "Management de proiect", level: 70, category: "Instrumente" },
 ];
 
-const categories = ["all", "Frontend", "Backend", "Tools"];
+const categories = [
+  "toate",
+  "Planificare",
+  "GIS & Software",
+  "Reglementare",
+  "Instrumente",
+];
 
 export const SkillsSection = () => {
-  const [activeCategory, setActiveCategory] = useState("all");
+  const [activeCategory, setActiveCategory] = useState("toate");
 
   const filteredSkills = skills.filter(
-    (skill) => activeCategory == "all" || skill.category === activeCategory
+    (skill) => activeCategory == "toate" || skill.category === activeCategory
   );
   return (
     <section id="skills" className="py-24 px-4 relative bg-secondary">
-      <div className="container mx-auto max-w-5xl">
+      <div
+        className="container mx-auto max-w-5xl"
+        data-aos="zoom-in"
+        data-aos-delay="100"
+      >
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          My <span className="text-primary"> Skills</span>
+          Competențele <span className="text-primary"> Mele</span>
         </h2>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">
@@ -72,11 +102,11 @@ export const SkillsSection = () => {
                 />
               </div>
 
-              <div className="text-right mt-1">
+              {/* <div className="text-right mt-1">
                 <span className="text-sm text-muted-foreground">
                   {skill.level}%
                 </span>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

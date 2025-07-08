@@ -1,43 +1,47 @@
 import { Instagram, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react";
-import { cn } from "../lib/utils";
-import { useToast } from "../hooks/use-toast";
-import { useState } from "react";
+// import { cn } from "../lib/utils";
+// import { useToast } from "../hooks/use-toast";
+// import { useState } from "react";
 
 export const ContactSection = () => {
-  const { toast } = useToast();
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  // const { toast } = useToast();
+  // const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
 
-    setIsSubmitting(true);
+  //   setIsSubmitting(true);
 
-    setTimeout(() => {
-      toast({
-        title: "Message sent!",
-        description: "Thank you for your message. I'll get back to you soon.",
-      });
-      setIsSubmitting(false);
-    }, 1500);
-  };
+  //   setTimeout(() => {
+  //     toast({
+  //       title: "Message sent!",
+  //       description: "Thank you for your message. I'll get back to you soon.",
+  //     });
+  //     setIsSubmitting(false);
+  //   }, 1500);
+  // };
 
   return (
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
-      <div className="container mx-auto max-w-5xl">
+      <div
+        className="container mx-auto max-w-5xl"
+        data-aos="flip-left"
+        data-aos-delay="100"
+      >
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          Get In <span className="text-primary">Touch</span>
+          Ia <span className="text-primary">legătura</span> cu mine!
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          I’m always open to new collaborations. If you have a project in mind
-          or just want to say hello, feel free to reach out — let’s build
-          something great together.
+          Sunt mereu deschis la noi colaborări. Dacă ai un proiect în minte sau
+          vrei pur și simplu să îmi lași un mesaj, nu ezita să mă contactezi —
+          hai să construim ceva deosebit împreună.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-11">
           <div className="space-y-8">
             <h3 className="text-2xl font-semibold mb-6">
               {" "}
-              Contact Information
+              Informatii de contact
             </h3>
             <div className="space-y-6 justify-center">
               <div className="flex items-start space-x-4">
@@ -50,7 +54,7 @@ export const ContactSection = () => {
                     href="mailto:robertmandici29@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    robertmandici29@gmail.com
+                    mihainicolescu@gmail.com
                   </a>
                 </div>
               </div>
@@ -64,7 +68,7 @@ export const ContactSection = () => {
                     href="tel:+40725923168"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +40725923168
+                    +407xxxyyy
                   </a>
                 </div>
               </div>
@@ -75,14 +79,14 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Location</h4>
                   <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Bucharest, Romania
+                    Bucuresti, Romania
                   </a>
                 </div>
               </div>
             </div>
 
             <div className="pt-8">
-              <h4> Connect With Me</h4>
+              <h4> Conecteaza-te cu mine</h4>
               <div className="flex space-x-4 justify-center">
                 <a
                   href="https://www.linkedin.com/in/robert-mandici-473b42181/"
@@ -98,10 +102,15 @@ export const ContactSection = () => {
           </div>
 
           <div
-            className="bg-card p-8 rounded-lg shadow-xs"
-            onSubmit={handleSubmit}
+            className="bg-card p-4 rounded-lg shadow-xs"
+            // onSubmit={handleSubmit}
           >
-            <h3 className="text-2xl font-semibold mb-6"> Send a Message</h3>
+            <img
+              src="/media/image_contact.jpg"
+              alt="Image contact"
+              className="max-h-95 object-contain justify-self-center"
+            />
+            {/* <h3 className="text-2xl font-semibold mb-6"> Trimite un mesaj</h3>
 
             <form className="space-y-6">
               <div>
@@ -110,7 +119,7 @@ export const ContactSection = () => {
                   className="block text-sm font-medium mb-2"
                 >
                   {" "}
-                  Your Name
+                  Numele tau
                 </label>
                 <input
                   type="text"
@@ -118,7 +127,7 @@ export const ContactSection = () => {
                   name="name"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
-                  placeholder="John Doe..."
+                  placeholder="Nume..."
                 />
               </div>
 
@@ -128,7 +137,7 @@ export const ContactSection = () => {
                   className="block text-sm font-medium mb-2"
                 >
                   {" "}
-                  Your Email
+                  Email
                 </label>
                 <input
                   type="text"
@@ -136,7 +145,7 @@ export const ContactSection = () => {
                   name="email"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
-                  placeholder="john.doe@email.com"
+                  placeholder="nume@email.com"
                 />
               </div>
 
@@ -146,14 +155,14 @@ export const ContactSection = () => {
                   className="block text-sm font-medium mb-2"
                 >
                   {" "}
-                  Your Message
+                  Mesajul tau
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none"
-                  placeholder="Hello, I'd like to talk about..."
+                  placeholder="Salut, as vrea sa vorbim despre..."
                 />
               </div>
 
@@ -164,10 +173,10 @@ export const ContactSection = () => {
                   "cosmic-button w-full flex items-center justify-center gap-2"
                 )}
               >
-                {isSubmitting ? "Sending..." : "Send Message"}
+                {isSubmitting ? "Se trimite..." : "Trimite mesaj"}
                 <Send size={16} />
               </button>
-            </form>
+            </form> */}
           </div>
         </div>
       </div>

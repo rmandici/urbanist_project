@@ -4,10 +4,10 @@ import { Menu } from "lucide-react";
 import { X } from "lucide-react";
 
 const navItems = [
-  { name: "Home", href: "#hero" },
-  { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
+  { name: "Acasa", href: "#hero" },
+  { name: "Despre mine", href: "#about" },
+  { name: "Competente", href: "#skills" },
+  /*{ name: "Projects", href: "#projects" },*/
   { name: "Contact", href: "#contact" },
 ];
 
@@ -38,9 +38,18 @@ export const Navbar = () => {
           className="text-xl font-bold text-primary flex items-center"
           href="#hero"
         >
-          <span className="relative z-10">
-            <span className="text-glow text-foreground">Robert Mandici</span>{" "}
-            Portofolio
+          <span className="flex items-center gap-2 relative z-10">
+            {/* Logo în stânga */}
+            <img
+              src="/media/logo_bms.jpg"
+              alt="Urban Movement Studio Logo"
+              className="w-8 h-8 object-contain"
+            />
+            {/* Textul */}
+            <span>
+              <span className="text-glow text-foreground">URBAN </span> MOVEMENT{" "}
+              <span className="text-glow text-foreground">STUDIO </span>
+            </span>
           </span>
         </a>
 
