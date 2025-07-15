@@ -9,7 +9,7 @@ export const Footer = () => {
 
       <div className="flex justify-center items-center mb-4 sm:mb-0 sm:order-last">
         <img
-          src="/media/footer_image.jpg"
+          src="/media/footer_image.png"
           alt="Footer Image"
           className="max-h-20"
         />
