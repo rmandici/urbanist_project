@@ -14,19 +14,12 @@ const skills = [
     category: "Planificare",
   },
   {
-    name: "Planuri Urbanistice Generale (PUG)",
-    level: 80,
-    category: "Planificare",
-  },
-  {
     name: "Strategii de Dezvoltare Urbană",
     level: 85,
     category: "Planificare",
   },
-  { name: "Regenerare Urbană", level: 80, category: "Planificare" },
 
   // GIS & Software
-  { name: "ArcGIS", level: 85, category: "GIS & Software" },
   { name: "QGIS", level: 80, category: "GIS & Software" },
   { name: "AutoCAD", level: 90, category: "GIS & Software" },
   { name: "SketchUp", level: 75, category: "GIS & Software" },
@@ -66,16 +59,16 @@ export const SkillsSection = () => {
         data-aos-delay="100"
       >
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          Competențele <span className="text-primary"> Mele</span>
+          Competențe
         </h2>
 
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-4 mb-12 ">
           {categories.map((category, key) => (
             <button
               key={key}
               onClick={() => setActiveCategory(category)}
               className={cn(
-                "px-5 py-2 rounded-full transition-colors duration-300 capitalize",
+                "px-5 py-2 rounded-full transition-colors duration-300 capitalize cursor-pointer hover:shadow-[0_0_10px_rgba(11,105,157,0.5)]",
                 activeCategory === category
                   ? "bg-primary text-primary-foreground"
                   : "bg-secondary/60 text-foreground hover:bd-secondary"

@@ -14,15 +14,16 @@ export const HeroSection = () => {
               {" "}
               Mihai
             </span>
-            <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">
+            <span className="text-primary ml-2 opacity-0 animate-fade-in-delay-2">
               {" "}
               Nicolescu
             </span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            Urbanist freelancer, specializat în planificare urbană, consultanță
-            și dezvoltare de proiecte care aduc plusvaloare comunității.
+            Urbanist cu experiență, specializat în planificare urbană,
+            consultanță și dezvoltare de proiecte pentru crearea de comunități
+            durabile și sustenabile.
           </p>
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
             <a href="#about" className="cosmic-button">

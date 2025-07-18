@@ -9,7 +9,7 @@ export const AboutSection = () => {
           data-aos="fade-up"
           data-aos-delay="0"
         >
-          Despre <span className="text-primary"> Mine</span>
+          Despre noi
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -18,7 +18,7 @@ export const AboutSection = () => {
               <img
                 src="/media/image_about.jpg"
                 alt="Image about"
-                className="max-h-60 object-contain justify-self-center"
+                className="max-h-55 object-contain justify-self-center"
                 data-aos="fade-up"
                 data-aos-delay="200"
               />
@@ -28,8 +28,8 @@ export const AboutSection = () => {
               data-aos="fade-up"
               data-aos-delay="400"
             >
-              Urbanist freelancer dedicat dezvoltării spațiilor urbane moderne
-              și sustenabile
+              Urbanist dedicat dezvoltării spațiilor urbane moderne și
+              sustenabile
             </h3>
 
             <p
@@ -37,10 +37,11 @@ export const AboutSection = () => {
               data-aos="fade-up"
               data-aos-delay="600"
             >
-              Am acumulat experiență în proiecte diverse de urbanism, oferind
-              soluții adaptate contextului local și nevoilor comunității.
-              Fiecare proiect îmi oferă ocazia de a contribui la crearea unor
-              orașe mai funcționale și mai plăcute.
+              Prin acumularea de experiență în proiecte diverse de urbanism în
+              decursul a 6 ani de activitate, oferind soluții adaptate
+              contextului local și nevoilor comunității, fiecare proiect mi-a
+              pus la dispoziție ocazia de a contribui la crearea unor spații
+              funcționale și plăcute.
             </p>
 
             <p
@@ -49,8 +50,8 @@ export const AboutSection = () => {
               data-aos-delay="800"
             >
               Procesele de planificare urbană, colaborarea multidisciplinară și
-              atenția la detalii mă motivează să găsesc cele mai bune abordări
-              pentru fiecare spațiu în parte.
+              atenția la detalii fiind motivarea să găsesc cele mai bune
+              abordări pentru fiecare spațiu în parte.
             </p>
 
             <div
@@ -68,7 +69,7 @@ export const AboutSection = () => {
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 {" "}
-                Competente{" "}
+                Competențe{" "}
               </a>
             </div>
           </div>
@@ -146,7 +147,7 @@ export const AboutSection = () => {
                   data-aos-delay="800"
                 >
                   <h4 className="font-semibold text-lg">
-                    Elaborare Documentații (PUZ/PUD/PU)
+                    Elaborare Documentații (PUZ/PUD)
                   </h4>
                   <p className="text-muted-foreground">
                     Întocmirea documentațiilor urbanistice necesare pentru

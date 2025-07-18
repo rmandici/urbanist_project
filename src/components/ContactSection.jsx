@@ -1,4 +1,12 @@
-import { Instagram, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react";
+import {
+  Instagram,
+  Linkedin,
+  Mail,
+  MapPin,
+  Phone,
+  Send,
+  Users,
+} from "lucide-react";
 // import { cn } from "../lib/utils";
 // import { useToast } from "../hooks/use-toast";
 // import { useState } from "react";
@@ -25,83 +33,97 @@ export const ContactSection = () => {
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
       <div
         className="container mx-auto max-w-5xl"
-        data-aos="flip-left"
+        data-aos="zoom-in"
         data-aos-delay="100"
       >
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          Ia <span className="text-primary">legătura</span> cu mine!
+          Ia legătura cu noi!
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Sunt mereu deschis la noi colaborări. Dacă ai un proiect în minte sau
-          vrei pur și simplu să îmi lași un mesaj, nu ezita să mă contactezi —
-          hai să construim ceva deosebit împreună.
+          Dacă dorești dezvoltarea unui spațiu, ai nevoie de consultanță sau
+          vrei pur și simplu să lași un mesaj, nu ezita să ne contactezi.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-11">
-          <div className="space-y-8">
-            <h3 className="text-2xl font-semibold mb-6">
-              {" "}
-              Informatii de contact
-            </h3>
-            <div className="space-y-6 justify-center">
-              <div className="flex items-start space-x-4">
-                <div className="p3 rounded-full bg-primary/10">
-                  <Mail className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <h4 className="font-medium"> Email</h4>
-                  <a
-                    href="mailto:robertmandici29@gmail.com"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    mihainicolescu@gmail.com
-                  </a>
-                </div>
+        <div className="space-y-8">
+          <h3 className="text-2xl font-semibold mb-6">
+            {" "}
+            Informații de contact
+          </h3>
+          <div className="grid grid-cols-1 gap-6 md:flex md:space-x-6 md:space-y-0 mx-auto w-fit">
+            <div className="flex items-start space-x-2">
+              <div className="p3 rounded-full bg-primary/10">
+                <Mail className="h-6 w-6 text-primary" />
               </div>
-              <div className="flex items-start space-x-4">
-                <div className="p3 rounded-full bg-primary/10">
-                  <Phone className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <h4 className="font-medium"> Phone</h4>
-                  <a
-                    href="tel:+40725923168"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    +407xxxyyy
-                  </a>
-                </div>
-              </div>
-              <div className="flex items-start space-x-4">
-                <div className="p3 rounded-full bg-primary/10">
-                  <MapPin className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <h4 className="font-medium"> Location</h4>
-                  <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Bucuresti, Romania
-                  </a>
-                </div>
+              <div>
+                <h4 className="font-medium"> Email</h4>
+                <a
+                  href="mailto:robertmandici29@gmail.com"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  mihainicolescu@gmail.com
+                </a>
               </div>
             </div>
-
-            <div className="pt-8">
-              <h4> Conecteaza-te cu mine</h4>
-              <div className="flex space-x-4 justify-center">
+            <div className="flex items-start space-x-2">
+              <div className="p3 rounded-full bg-primary/10">
+                <Phone className="h-6 w-6 text-primary" />
+              </div>
+              <div>
+                <h4 className="font-medium"> Telefon</h4>
                 <a
-                  href="https://www.linkedin.com/in/robert-mandici-473b42181/"
-                  target="_blank"
+                  href="tel:+40725923168"
+                  className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  <Linkedin />
+                  +407xxxyyy
                 </a>
-                <a href="https://www.instagram.com/robert.mdc/" target="_blank">
-                  <Instagram />
+              </div>
+            </div>
+            <div className="flex items-start space-x-2">
+              <div className="p3 rounded-full bg-primary/10">
+                <MapPin className="h-6 w-6 text-primary" />
+              </div>
+              <div>
+                <h4 className="font-medium "> Locatie</h4>
+                <a className="text-muted-foreground hover:text-primary transition-colors">
+                  Bucuresti, Romania
+                </a>
+              </div>
+            </div>
+            <div className="flex items-start space-x-2">
+              <div className="p3 rounded-full bg-primary/10">
+                <Users className="h-6 w-6 text-primary" />
+              </div>
+              <div>
+                <h4 className="font-medium"> Social Media</h4>
+                <a className="text-muted-foreground hover:text-primary transition-colors flex justify-center">
+                  <a
+                    href="https://www.linkedin.com/in/robert-mandici-473b42181/"
+                    target="_blank"
+                  >
+                    <Linkedin />
+                  </a>
                 </a>
               </div>
             </div>
           </div>
 
-          <div
+          {/* <div className="pt-8">
+            <h4> Conecteaza-te cu mine</h4>
+            <div className="flex space-x-4 justify-center">
+              <a
+                href="https://www.linkedin.com/in/robert-mandici-473b42181/"
+                target="_blank"
+              >
+                <Linkedin />
+              </a>
+              <a href="https://www.instagram.com/robert.mdc/" target="_blank">
+                <Instagram />
+              </a>
+            </div>
+          </div> */}
+        </div>
+
+        {/* <div
             className="bg-card p-4 rounded-lg shadow-xs"
             // onSubmit={handleSubmit}
           >
@@ -176,9 +198,8 @@ export const ContactSection = () => {
                 {isSubmitting ? "Se trimite..." : "Trimite mesaj"}
                 <Send size={16} />
               </button>
-            </form> */}
-          </div>
-        </div>
+            </form> 
+          </div> */}
       </div>
     </section>
   );

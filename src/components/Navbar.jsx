@@ -41,28 +41,31 @@ export const Navbar = () => {
             className="text-xl font-bold text-primary flex items-center"
             href="#hero"
           >
-            <span className="flex items-center gap-2 relative z-10">
+            <span className="flex items-center gap-2 relative z-10 hover:scale-105 transition-all duration-300">
               {/* Logo în stânga */}
               <img
-                src="/media/logo_bms.png"
+                src="/media/footer_image.png"
                 alt="Urban Movement Studio Logo"
-                className="w-12 h-12 object-contain sm:w-10 sm:h-10"
+                className="w-35 h-15 object-contain sm:w-55 sm:h-25"
               />
               {/* Textul */}
-              <span>
+              {/* <span>
                 URBAN MOVEMENT{" "}
                 <span className="text-[hsl(203_37%_69%)]">STUDIO </span>
-              </span>
+              </span> */}
             </span>
           </a>
 
           {/*desktop version*/}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-4">
             {navItems.map((item, key) => (
               <a
                 key={key}
                 href={item.href}
-                className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                className="text-foreground/80 transition-all duration-300 rounded-full 
+                  hover:bg-primary hover:text-primary-foreground px-3 py-1 
+                  hover:shadow-[0_0_10px_rgba(11,105,157,0.5)] 
+                  hover:scale-105 "
               >
                 {item.name}
               </a>
@@ -94,7 +97,7 @@ export const Navbar = () => {
             <a
               key={key}
               href={item.href}
-              className="text-foreground/80 hover:text-primary transition-colors duration-300"
+              className="text-foreground/80"
               onClick={() => setIsMenuOpen(false)}
             >
               {item.name}
