@@ -9,21 +9,25 @@ export const HeroSection = () => {
       <div className="container max-w-4xl mx-auto text-auto z-10">
         <div className="space-y-6">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            <span className="opacity-0 animate-fade-in"> Salut, sunt</span>
+            <span className="opacity-0 animate-fade-in"> Salut, suntem</span>
             <span className="text-primary opacity-0 animate-fade-in-delay-1">
               {" "}
-              Mihai
+              Urban
             </span>
             <span className="text-primary ml-2 opacity-0 animate-fade-in-delay-2">
               {" "}
-              Nicolescu
+              Movement
+            </span>
+            <span className="ml-2 opacity-0 animate-fade-in-delay-3">
+              {" "}
+              studio
             </span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            Urbanist cu experiență, specializat în planificare urbană,
-            consultanță și dezvoltare de proiecte pentru crearea de comunități
-            durabile și sustenabile.
+            Firma cu experiență, specializată în planificare urbană, consultanță
+            și dezvoltare de proiecte pentru crearea de comunități durabile și
+            sustenabile.
           </p>
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
             <a href="#about" className="cosmic-button">

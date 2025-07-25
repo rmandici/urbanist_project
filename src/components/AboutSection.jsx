@@ -28,7 +28,7 @@ export const AboutSection = () => {
               data-aos="fade-up"
               data-aos-delay="400"
             >
-              Urbanist dedicat dezvoltării spațiilor urbane moderne și
+              Suntem dedicați dezvoltării spațiilor urbane moderne și
               sustenabile
             </h3>
 
