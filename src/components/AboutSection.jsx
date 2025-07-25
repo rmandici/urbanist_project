@@ -18,7 +18,7 @@ export const AboutSection = () => {
               <img
                 src="/media/image_about.jpg"
                 alt="Image about"
-                className="max-h-55 object-contain justify-self-center"
+                className="max-h-55 object-contain mx-auto"
                 data-aos="fade-up"
                 data-aos-delay="200"
               />
