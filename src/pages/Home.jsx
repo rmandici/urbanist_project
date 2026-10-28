@@ -1,35 +1,51 @@
-import { ThemeToggle } from "../components/ThemeToggle";
-// import { StarBackground } from "@/components/StarBackground";
 import { Navbar } from "../components/Navbar";
 import { HeroSection } from "../components/HeroSection";
 import { AboutSection } from "../components/AboutSection";
+import { ServicesSection } from "../components/ServicesSection";
 import { SkillsSection } from "../components/SkillsSection";
-// import { ProjectsSection } from "../components/ProjectsSection";
 import { ContactSection } from "../components/ContactSection";
 import { Footer } from "../components/Footer";
-import { BokehBackground } from "../components/BokehBackground";
 
-export const Home = () => {
-  return (
-    <div className="min-h-screen text-foreground overflow-x-hidden">
-      {/*Theme Toggle*/}
-      <ThemeToggle />
-      {/*Background Effect*/}
-      {/*<StarBackground />*/}
-      <BokehBackground />
-      {/*Navbar */}
-      <Navbar />
-      {/*Maine Content*/}
-      <main>
-        <HeroSection />
-        <AboutSection />
-        <SkillsSection />
-        {/*<ProjectsSection />*/}
-        <ContactSection />
-      </main>
+const handleSectionClick = (e) => {
+  const link = e.target.closest('a[href^="#"]');
 
-      {/*Footer*/}
-      <Footer />
-    </div>
-  );
+  if (!link || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;
+
+  const sectionId = link.getAttribute("href").slice(1);
+  const section = document.getElementById(sectionId);
+
+  if (!section) return;
+
+  e.preventDefault();
+
+  section.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
+
+  // Eliminăm eventualul hash existent din URL
+  if (window.location.hash) {
+    window.history.replaceState(
+      null,
+      "",
+      window.location.pathname + window.location.search
+    );
+  }
 };
+
+export const Home = () => (
+
+  
+
+  <div className="site-shell" onClick={handleSectionClick}>
+    <Navbar />
+    <main>
+      <HeroSection />
+      <AboutSection />
+      <ServicesSection />
+      <SkillsSection />
+      <ContactSection />
+    </main>
+    <Footer />
+  </div>
+);

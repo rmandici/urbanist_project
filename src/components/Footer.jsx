@@ -1,26 +1,17 @@
-import { ArrowUp } from "lucide-react";
-
-export const Footer = () => {
+export function Footer() {
   return (
-    <footer className="py-12 px-4 bg-card relative border-t border-border mt-12 pt-8 flex flex-col items-center sm:flex-row sm:justify-between">
-      <p className="text-sm text-muted-foreground mb-4 sm:mb-0 text-center sm:text-left">
-        &copy; {new Date().getFullYear()} UMS.com. All rights reserved.
-      </p>
-
-      <div className="flex justify-center items-center mb-4 sm:mb-0 sm:order-last">
-        <img
-          src="/media/footer_image.png"
-          alt="Footer Image"
-          className="max-h-20"
-        />
+    <footer className="footer">
+      <div className="site-container footer__main">
+        <div className="footer__brand"><strong>URBAN MOVEMENT STUDIO</strong><span>URBANISM & PLANIFICARE TERITORIALĂ</span></div>
+        <div className="footer__links">
+          <a href="#despre">Despre noi</a><a href="#servicii">Servicii</a><a href="#competente">Competențe</a><a href="#contact">Contact</a>
+        </div>
       </div>
-
-      <a
-        href="#hero"
-        className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 text-primary-purple transition-colors"
-      >
-        <ArrowUp size={20} />
-      </a>
+      <div className="site-container footer__bottom">
+        <span>© {new Date().getFullYear()} Urban Movement Studio. Toate drepturile rezervate.</span>
+        <span>CUI: 50757325 &nbsp; | &nbsp; Reg. Com.: J2024034326000</span>
+        <a href="#top">Înapoi sus ↑</a>
+      </div>
     </footer>
   );
-};
+}

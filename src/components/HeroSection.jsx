@@ -1,46 +1,39 @@
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, ArrowUpRight } from "lucide-react";
 
-export const HeroSection = () => {
+export function HeroSection() {
   return (
-    <section
-      id="hero"
-      className="relative min-h-screen flex flex-col items-center justify-center px-4"
-    >
-      <div className="container max-w-4xl mx-auto text-auto z-10">
-        <div className="space-y-6">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            <span className="opacity-0 animate-fade-in"> Salut, suntem</span>
-            <span className="text-primary opacity-0 animate-fade-in-delay-1">
-              {" "}
-              Urban
-            </span>
-            <span className="text-primary ml-2 opacity-0 animate-fade-in-delay-2">
-              {" "}
-              Movement
-            </span>
-            <span className="ml-2 opacity-0 animate-fade-in-delay-3">
-              {" "}
-              studio
-            </span>
-          </h1>
-
-          <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            Firma cu experiență, specializată în planificare urbană, consultanță
-            și dezvoltare de proiecte pentru crearea de comunități durabile și
-            sustenabile.
-          </p>
-          <div className="pt-4 opacity-0 animate-fade-in-delay-4">
-            <a href="#about" className="cosmic-button">
-              Start
-            </a>
+    <section className="hero" id="hero" aria-labelledby="hero-heading">
+      <div className="hero__grid" aria-hidden="true" />
+      <div className="site-container hero__inner">
+        <div className="hero__content">
+          <span className="eyebrow eyebrow--light"><span className="eyebrow__dash" /> URBANISM & PLANIFICARE TERITORIALĂ</span>
+          <h1 id="hero-heading">Transformăm oportunitățile <strong>în proiecte realizabile.</strong></h1>
+          <p>Planificare urbană, consultanță și management de proiect. Soluții fundamentate, adaptate fiecărui teritoriu și fiecărei investiții.</p>
+          <div className="hero__actions">
+            <a className="button button--light" href="#servicii">Descoperă serviciile <ArrowUpRight size={18} /></a>
+            <a className="hero__text-link" href="#despre">Despre noi <span aria-hidden="true">↗</span></a>
           </div>
         </div>
+        <div className="hero-art" aria-hidden="true">
+          <div className="hero-art__glow" />
+          <div className="hero-art__ring hero-art__ring--outer" />
+          <div className="hero-art__ring hero-art__ring--middle" />
+          <div className="hero-art__ring hero-art__ring--inner" />
+          <div className="hero-art__axis hero-art__axis--horizontal" />
+          <div className="hero-art__axis hero-art__axis--vertical" />
+          <span className="hero-art__node hero-art__node--one" />
+          <span className="hero-art__node hero-art__node--two" />
+          <span className="hero-art__node hero-art__node--three" />
+          <div className="hero-art__center">
+            <span className="hero-art__monogram">UM<span>S</span></span>
+            <span className="hero-art__caption">URBAN MOVEMENT STUDIO</span>
+          </div>
+          <div className="hero-art__coordinate hero-art__coordinate--one">44° 28′ N</div>
+          <div className="hero-art__coordinate hero-art__coordinate--two">26° 06′ E</div>
+        </div>
       </div>
-
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
-        <span className="text-sm text-muted-foreground mb-2"> Scroll </span>
-        <ArrowDown className="h-5 w-5 text-primary" />
-      </div>
+      <a className="hero__scroll" href="#despre" aria-label="Derulează la secțiunea Despre noi"><ArrowDown size={18}/><span>SCROLL PENTRU A EXPLORA</span></a>
+      <div className="hero__bottom-rule" />
     </section>
   );
-};
+}
