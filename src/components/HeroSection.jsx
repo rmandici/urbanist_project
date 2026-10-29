@@ -78,7 +78,7 @@ export function HeroSection() {
 
           <div className="hero-art__center">
             <span className="hero-art__monogram">
-              UM<span>N</span>
+              UM<span>S</span>
             </span>
             <span className="hero-art__caption">URBAN MOVEMENT STUDIO</span>
           </div>

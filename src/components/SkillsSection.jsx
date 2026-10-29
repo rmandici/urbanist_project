@@ -12,7 +12,7 @@ const competences = [
     "Definirea direcțiilor de dezvoltare pe termen mediu și lung pentru comunități și teritorii, în concordanță cu obiectivele locale.",
   ],
   [
-    "QGIS - Sistem de Informații Geografice",
+    "GIS - Sistem de Informații Geografice",
     "Utilizarea sistemelor GIS pentru analiza, gestionarea și reprezentarea datelor spațiale necesare procesului de planificare urbană.",
   ],
   [
